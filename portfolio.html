@@ -18,25 +18,26 @@
 <body>
     <!-- Верхняя часть-->
 
-    <header class="header-outline-portfolio"> 
+    <header class="header"> 
         <div class="container header-division">
-      <nav class=" container-header">
-        <a href="/" class="logo" lang="en"><span class="logo-colour">Web</span >Studio</a>
-        <ul class="nav-list">
-            <li class="site-nav-list"><a class="site-nav" href="./index.html">Студия</a></li>
-            <li class="site-nav-list"><a class="site-nav current" href="./portfolio.html">Портфолио</a></li>
-            <li class="site-nav-list"><a class="site-nav" href="">Контакты</a></li>
+      <nav class=" header-nav">
+        <a href="/" class="logo" lang="en"><span class="logo--colour">Web</span >Studio</a>
+        <ul class="header-nav__list">
+            <li class="header-nav__element"><a class="header-nav__link" href="./index.html">Студия</a></li>
+            <li class="header-nav__element"><a class="header-nav__link header-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+            <li class="header-nav__element"><a class="header-nav__link" href="">Контакты</a></li>
         </ul>
       </nav>
-
-      <ul class="auth-list">
-        <li class="auth-nav-element" lang="en"><a  class="auth-nav" href="mailto:info@devstudio.com">
-            <svg class="header-icons" width="16" height="12"><use href="./images/Presprite/Sprite.svg#icon-envelope-hover" ></use></svg>
-        info@devstudio.com</a></li>
-        <li class="auth-nav-element"><a  class="auth-nav" href="tel:+380961111111">
-            <svg class="header-icons" width="10" height="16"><use href="./images/Presprite/Sprite.svg#icon-phone" ></use></svg>
-            +38 096 111 11 11</a></li>
-    </ul>
+      <div class="header-auth">
+        <ul class="header-auth__list">
+            <li class="header-auth__element" lang="en"><a  class="header-auth__link" href="mailto:info@devstudio.com">
+                <svg class="header-auth-icons" width="16" height="12"><use href="./images/Presprite/Sprite.svg#icon-envelope-hover" ></use></svg>
+            info@devstudio.com</a></li>
+            <li class="header-auth__element"><a  class="header-auth__link" href="tel:+380961111111">
+                <svg class="header-auth-icons" width="10" height="16"><use href="./images/Presprite/Sprite.svg#icon-phone" ></use></svg>
+                +38 096 111 11 11</a></li>
+        </ul>
+        </div>
     </div>
     </header>   
     <!-- Секция кнопок фильтров  -->
@@ -181,31 +182,32 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container bottom">
-            <div class="logo-block">
-        <a href="./" class="logo-footer"> <span class="logo-footer-colour">Web</span>Studio</a>
+        <div class="bottom-block container ">
+        <div class="logo-block">
+        <a href="./" class="logo logo-block__link"> <span class="logo--colour">Web</span>Studio</a>
         <address class="adress">
-        <ul class="footer-adress">
-            <li class="footer-list-element"><a class="footer-first-link" href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li class="footer-list-element" lang="en"><a  class="footer-second-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="footer-list-element"><a class="footer-second-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="adress__list">
+            <li class="adress-element"><a class="adress__link" href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li class="adress-element" lang="en"><a  class="adress__link adress__link--second" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="adress-element"><a class="adress__link adress__link--second" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
         </address>
         </div>
         <div class="follow-us">
-            <h2 class="follow-us-text">Присоединяйтесь</h2>
-            <ul class="follow-block">
-                <li class="follow-block-element "><a class="footer-social-links" href=""><svg class="social-footer-svg"><use href="./images/Presprite/Sprite.svg#icon-instagram-icon"></use></svg></a></li>
-                <li class="follow-block-element"><a class="footer-social-links" href=""><svg class="social-footer-svg"><use href="./images/Presprite/Sprite.svg#icon-twitter"></use></svg></a></li>
-                <li class="follow-block-element"><a class="footer-social-links" href=""><svg class="social-footer-svg"><use href="./images/Presprite/Sprite.svg#icon-facebook"></use></svg></a></li>
-                <li class="follow-block-element"><a class="footer-social-links" href=""><svg class="social-footer-svg"><use href="./images/Presprite/Sprite.svg#icon-linkedin"></use></svg></a></li>
+            <p class="follow-us__title">Присоединяйтесь</p>
+            <ul class="follow-us__list">
+                <li class="follow-us__element"><a class="follow-us__link" href=""><svg class="follow-us__svg"><use href="./images/Presprite/Sprite.svg#icon-instagram-icon"></use></svg></a></li>
+                <li class="follow-us__element"><a class="follow-us__link" href=""><svg class="follow-us__svg"><use href="./images/Presprite/Sprite.svg#icon-twitter"></use></svg></a></li>
+                <li class="follow-us__element"><a class="follow-us__link" href=""><svg class="follow-us__svg"><use href="./images/Presprite/Sprite.svg#icon-facebook"></use></svg></a></li>
+                <li class="follow-us__element"><a class="follow-us__link" href=""><svg class="follow-us__svg"><use href="./images/Presprite/Sprite.svg#icon-linkedin"></use></svg></a></li>
             </ul>
         </div>
-        <div class="sign-division">
-            <p class="sign-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-            <form class="sign-form">
-                <input class="sign-input" type="email" placeholder="E-mail">
-                    <button class="sign-button">Подписаться <span class="paper-jet"></span></button>
+        <div class="sign">
+            <p class="sign__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+            <form class="sign__form">
+                <input class="sign__input" type="email" placeholder="E-mail">
+                    <button class="sign-button">Подписаться <span class="sign-button__jet"></span>
+                    </button>
             </form>
         </div>
     </div>
