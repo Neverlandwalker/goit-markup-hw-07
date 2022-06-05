@@ -67,8 +67,6 @@ img{
     max-width: 100%;
     display: block;
     height: auto;
-
-
 }
 
 
@@ -222,6 +220,31 @@ img{
     margin: 0 auto;
 }
 
+
+.button-block{
+    margin-left: auto;
+    margin-right: auto;
+    width: 202px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--filler-colour);
+}
+.hero-button{
+    height: 50px;
+    padding: 10px 32px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,87;
+    letter-spacing: 0.06em;
+    background-color: inherit;
+    color: var(--hero-text-color);
+    z-index: 2;
+    cursor: pointer;
+}
+.section{
+    padding: 94px 0;
+}
 .backdrop{
     position: fixed;
     top: 0;
@@ -274,30 +297,6 @@ img{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);
-}
-.button-block{
-    margin-left: auto;
-    margin-right: auto;
-    width: 202px;
-    height: 50px;
-    border-radius: 4px;
-    background-color: var(--filler-colour);
-}
-.hero-button{
-    height: 50px;
-    padding: 10px 32px;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1,87;
-    letter-spacing: 0.06em;
-    background-color: inherit;
-    color: var(--hero-text-color);
-    z-index: 2;
-    cursor: pointer;
-}
-.section{
-    padding: 94px 0;
 }
 .modal-form{
     display: flex;
@@ -869,7 +868,7 @@ color: var(--hero-text-color);
     background-repeat: no-repeat;
     background-position: center;
     fill: var(--hero-text-color);
-    background-image: url(../images/Presprite/send\ icon.svg);
+    background-image: url(../images/Presprite/send-icon.svg);
 }
 
 /* Portfolio.html */
@@ -879,16 +878,16 @@ color: var(--hero-text-color);
     
 }
 
-.filler-list {
+.filler__list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     
 }
-.filler-element:not(:first-child){
+.filler__element:not(:first-child){
     margin-left: 8px;
 }
-.filler-buttons{
+.filler__buttons{
     border: none;
     font-size: 16px;
     padding: 6px 22px;
@@ -901,54 +900,51 @@ color: var(--hero-text-color);
 }
 
 
-.filler-buttons:hover,
-.filler-buttons:focus{
+.filler__buttons:hover,
+.filler__buttons:focus{
     color: var(--hero-text-color);
     background: var(--filler-colour);
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 }
-.project-section{
-    padding-bottom: 94px;
 
-}
-.portfolio-projects{
+.projects__list{
     display: flex;
     flex-wrap: wrap;
     
 }
-.projects-element{
+.projects__element{
     background: #FFFFFF;
     box-sizing: border-box;
 }
-.projects-element{
+.projects__element{
     margin-left: 30px;
 
 }
-.projects-element:hover,
-.projects-element:focus{
+.projects__element:hover,
+.projects__element:focus{
     outline: transparent;
 }
-.projects-box{
+.projects-discription{
     padding: 20px 24px;
     border-left: 1px solid #EEEEEE; 
     border-right: 1px solid #EEEEEE ;
     border-bottom: 1px solid #EEEEEE;
     
 }
-.projects-element:nth-child(-n+6){
+.projects__element:nth-child(-n+6){
     margin-bottom: 30px;
 }
-.projects-element:nth-child(3n+1){
+.projects__element:nth-child(3n+1){
     margin-left: 0px;
 }
-.portfolio-link{
+.projects__link{
     display: block;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-thumb{
+.projects__thumb{
     position: relative;
     overflow: hidden;
 
@@ -968,18 +964,18 @@ border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1 );
     
 }
-.portfolio-link:hover,
-.portfolio-link:focus{
+.projects__link:hover,
+.projects__link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
-.portfolio-link:hover .card-overlay,
-.portfolio-link:focus .card-overlay{
+.projects__link:hover .card-overlay,
+.projects__link:focus .card-overlay{
     transform: translateY(0%);
     
     
 }
-.card-text{
+.card-overlay__text{
     position: absolute;
     width: 322px;
     height: 168px;
@@ -991,7 +987,7 @@ border-radius: 4px;
     transition: opacity 250ms ubic-bezier(0.4, 0, 0.2, 1 );
 
 }
-.portfolio-header-text{
+.projects-discription__title{
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -999,7 +995,7 @@ border-radius: 4px;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
-.portfolio-text{
+.projects-discription__text{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
